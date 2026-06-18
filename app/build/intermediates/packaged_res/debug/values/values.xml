@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundColor">#F5F7FA</color>
+    <color name="black">#000000</color>
+    <color name="borderColor">#E0E0E0</color>
+    <color name="errorColor">#F44336</color>
+    <color name="inputBackground">#F8F9FA</color>
+    <color name="primaryColor">#4285F4</color>
+    <color name="primaryDarkColor">#0059c1</color>
+    <color name="primaryLightColor">#80b4ff</color>
+    <color name="primaryTextColor">#212121</color>
+    <color name="secondaryColor">#ffffff</color>
+    <color name="secondaryDarkColor">#cccccc</color>
+    <color name="secondaryLightColor">#ffffff</color>
+    <color name="secondaryTextColor">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <string name="action_create_account">Criar Conta</string>
+    <string name="action_login">Entrar</string>
+    <string name="action_register">Cadastrar</string>
+    <string name="app_name">Edit Flow Img</string>
+    <string name="edit_generate_btn">Gerar Imagem Profissional (1 Crédito)</string>
+    <string name="edit_generating">Gerando...</string>
+    <string name="edit_tab_custom">Prompt Personalizado</string>
+    <string name="edit_tab_guided">Edição Guiada</string>
+    <string name="error_field_required">Campo obrigatório</string>
+    <string name="error_invalid_email">E-mail inválido</string>
+    <string name="error_invalid_password">Senha muito curta</string>
+    <string name="home_subtitle">Envie uma foto do celular e deixe a IA criar materiais de marketing profissionais</string>
+    <string name="home_title">Transforme Suas Fotos</string>
+    <string name="home_upload_box">Arraste e solte sua foto aqui\nou clique para selecionar • PNG, JPG até 10MB</string>
+    <string name="login_google">Google</string>
+    <string name="login_or">ou</string>
+    <string name="login_subtitle">Transforme fotos em materiais de\nmarketing profissionais</string>
+    <string name="login_title">Edit Flow Img</string>
+    <string name="preview_image_description">Prévia da imagem</string>
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_name">Nome</string>
+    <string name="prompt_password">Senha</string>
+    <string name="result_download">Baixar Imagem</string>
+    <string name="result_edit_other">Editar Outra</string>
+    <style name="RoundedButton" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">8dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="RoundedOutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">8dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="strokeColor">@color/borderColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+    <style name="Theme.EditFlowApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">@color/backgroundColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+    </style>
+</resources>

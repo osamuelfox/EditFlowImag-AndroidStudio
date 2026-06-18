@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\samue\\.gradle\\daemon\\8.5\\br.com.fox.editflow.app-mergeDebugResources-31:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\samue\\.gradle\\daemon\\8.5\\br.com.fox.editflow.app-main-34:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\samue\\.gradle\\daemon\\8.5\\br.com.fox.editflow.app-mergeDebugResources-31:\\layout\\activity_result.xml",
+        "source": "C:\\Users\\samue\\.gradle\\daemon\\8.5\\br.com.fox.editflow.app-main-34:\\layout\\activity_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\samue\\.gradle\\daemon\\8.5\\br.com.fox.editflow.app-mergeDebugResources-31:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\samue\\.gradle\\daemon\\8.5\\br.com.fox.editflow.app-main-34:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\samue\\.gradle\\daemon\\8.5\\br.com.fox.editflow.app-mergeDebugResources-31:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\samue\\.gradle\\daemon\\8.5\\br.com.fox.editflow.app-main-34:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-mergeDebugResources-31:/layout/activity_edit.xml",
+        "source": "br.com.fox.editflow.app-main-34:/layout/activity_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\samue\\.gradle\\daemon\\8.5\\br.com.fox.editflow.app-mergeDebugResources-31:\\layout\\activity_edit.xml",
+        "source": "C:\\Users\\samue\\.gradle\\daemon\\8.5\\br.com.fox.editflow.app-main-34:\\layout\\activity_edit.xml"
+    }
+]
