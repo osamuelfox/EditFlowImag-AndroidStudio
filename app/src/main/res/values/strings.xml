@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">EditFlow</string>
+
+    <!-- ── Login / Register ── -->
+    <string name="login_title">EditFlow</string>
+    <string name="login_subtitle">Transforme fotos em materiais de\nmarketing profissionais com IA</string>
+    <string name="action_login">Entrar</string>
+    <string name="action_register">Cadastrar</string>
+    <string name="action_create_account">Criar Conta</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_confirm">Confirmar</string>
+    <string name="action_retry">Tentar Novamente</string>
+
+    <!-- ── Campos ── -->
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Senha</string>
+    <string name="prompt_name">Nome completo</string>
+    <string name="prompt_hint">Descreva o que deseja mudar na imagem…</string>
+
+    <!-- ── Erros de validação (inline) ── -->
+    <string name="error_field_required">Campo obrigatório</string>
+    <string name="error_invalid_email">E-mail inválido</string>
+    <string name="error_password_short">Senha deve ter pelo menos 6 caracteres</string>
+    <string name="error_name_short">Nome deve ter pelo menos 2 caracteres</string>
+
+    <!-- ── Erros de rede / servidor ── -->
+    <string name="error_connection">Sem conexão com o servidor. Verifique sua internet e tente novamente.</string>
+    <string name="error_timeout">Tempo limite excedido. O servidor demorou muito para responder.</string>
+    <string name="error_login">E-mail ou senha incorretos. Verifique e tente novamente.</string>
+    <string name="error_login_server">Erro %d ao fazer login. Tente novamente.</string>
+    <string name="error_register">Não foi possível criar a conta. O e-mail pode já estar em uso.</string>
+    <string name="error_register_server">Erro %d ao criar conta. Tente novamente.</string>
+    <string name="error_upload">Falha ao enviar a imagem. Tente novamente.</string>
+    <string name="error_upload_too_large">Imagem muito grande. O tamanho máximo é 10 MB.</string>
+    <string name="error_upload_server">Erro %d ao enviar imagem.</string>
+    <string name="error_generate">Falha ao iniciar a geração. Tente novamente.</string>
+    <string name="error_generate_server">Erro %d ao iniciar geração.</string>
+    <string name="error_generation_failed">A geração falhou no servidor. Tente novamente.</string>
+    <string name="error_generation_failed_detail">Falha: %s</string>
+    <string name="error_image_processing">Erro ao processar a imagem selecionada.</string>
+    <string name="error_permission_denied">Permissão de acesso à galeria negada.</string>
+    <string name="error_download_unavailable">Link de download não disponível.</string>
+    <string name="error_download">Erro ao salvar a imagem. Tente novamente.</string>
+    <string name="error_image_id_missing">Erro interno: ID da imagem não encontrado.</string>
+
+    <!-- ── Loading / Estado ── -->
+    <string name="loading_logging_in">Entrando…</string>
+    <string name="loading_registering">Criando conta…</string>
+    <string name="loading_uploading">Enviando imagem…</string>
+    <string name="loading_generating">Gerando imagem com IA…</string>
+    <string name="loading_downloading">Salvando na galeria…</string>
+
+    <!-- ── Sucesso ── -->
+    <string name="success_image_saved">Imagem salva na galeria!</string>
+
+    <!-- ── AlertDialog de cancelamento ── -->
+    <string name="dialog_cancel_title">Cancelar operação?</string>
+    <string name="dialog_cancel_generation_message">A geração da imagem será cancelada e você voltará para a tela anterior.</string>
+    <string name="dialog_cancel_loading_message">O processo em andamento será interrompido.</string>
+    <string name="dialog_cancel_confirm">Cancelar operação</string>
+    <string name="dialog_cancel_dismiss">Aguardar</string>
+
+    <!-- ── Tela principal ── -->
+    <string name="home_title">Transforme Suas Fotos</string>
+    <string name="home_subtitle">Envie uma foto e deixe a IA criar materiais de marketing profissionais</string>
+    <string name="home_upload_box">Toque para selecionar uma foto\nPNG, JPG — até 10 MB</string>
+    <string name="home_upload_icon_desc">Ícone de upload</string>
+
+    <!-- ── Tela de edição ── -->
+    <string name="edit_section_title">Prompt personalizado</string>
+    <string name="edit_generate_btn">Gerar Imagem Profissional</string>
+    <string name="edit_generating">Gerando…</string>
+    <string name="edit_prompt_empty">Digite uma instrução para editar a imagem.</string>
+
+    <!-- ── Tela de resultado ── -->
+    <string name="result_download">Baixar Imagem</string>
+    <string name="result_edit_other">Editar Outra</string>
+    <string name="result_analysis_title">Análise</string>
+    <string name="result_changes_title">Alterações realizadas</string>
+    <string name="result_description_title">Descrição</string>
+
+    <!-- ── Descrições de acessibilidade ── -->
+    <string name="preview_image_description">Prévia da imagem selecionada</string>
+    <string name="result_image_description">Imagem gerada pela IA</string>
+    <string name="loading_indicator_desc">Carregando, aguarde</string>
+
+    <!-- ── Estado vazio ── -->
+    <string name="empty_state_title">Nenhuma imagem</string>
+    <string name="empty_state_message">Selecione uma foto para começar a editar com IA.</string>
+</resources>

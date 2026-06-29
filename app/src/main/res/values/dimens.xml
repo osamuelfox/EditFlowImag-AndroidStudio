@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ── Spacing (múltiplos de 4dp) ── -->
+    <dimen name="spacing_2xs">2dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_2xl">48dp</dimen>
+    <dimen name="spacing_3xl">64dp</dimen>
+
+    <!-- ── Corner Radius por categoria ── -->
+    <dimen name="corner_button">12dp</dimen>
+    <dimen name="corner_card">16dp</dimen>
+    <dimen name="corner_input">8dp</dimen>
+    <dimen name="corner_dialog">16dp</dimen>
+    <dimen name="corner_chip">8dp</dimen>
+    <dimen name="corner_overlay">0dp</dimen>
+
+    <!-- ── Elevation ── -->
+    <dimen name="elevation_card">2dp</dimen>
+    <dimen name="elevation_card_raised">6dp</dimen>
+    <dimen name="elevation_dialog">8dp</dimen>
+    <dimen name="elevation_fab">12dp</dimen>
+
+    <!-- ── Ícones ── -->
+    <dimen name="icon_size_sm">20dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_size_lg">48dp</dimen>
+    <dimen name="icon_size_xl">96dp</dimen>
+
+    <!-- ── Tipografia ── -->
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_body_sm">13sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_body_lg">16sp</dimen>
+    <dimen name="text_subtitle">18sp</dimen>
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="text_headline">24sp</dimen>
+    <dimen name="text_display">32sp</dimen>
+
+    <!-- ── Componentes ── -->
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="button_height_sm">40dp</dimen>
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="progress_size">48dp</dimen>
+    <dimen name="progress_stroke">4dp</dimen>
+
+    <!-- ── Layout ── -->
+    <dimen name="screen_padding_h">24dp</dimen>
+    <dimen name="screen_padding_v">16dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="section_gap">32dp</dimen>
+
+    <!-- ── Duração de animações (em ms) ── -->
+    <!-- Nota: não pode ser referenciado diretamente em Java, mas documenta os valores padrão -->
+    <!-- short=150, medium=250, long=350 -->
+</resources>

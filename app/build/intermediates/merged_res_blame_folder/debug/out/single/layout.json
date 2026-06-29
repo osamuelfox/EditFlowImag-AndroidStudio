@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_register.xml",
+        "source": "br.com.fox.editflow.app-main-35:/layout/activity_register.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_result.xml",
+        "source": "br.com.fox.editflow.app-main-35:/layout/activity_result.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_main.xml",
+        "source": "br.com.fox.editflow.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/view_empty_state.xml",
+        "source": "br.com.fox.editflow.app-main-35:/layout/view_empty_state.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/view_loading_overlay.xml",
+        "source": "br.com.fox.editflow.app-main-35:/layout/view_loading_overlay.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_login.xml",
+        "source": "br.com.fox.editflow.app-main-35:/layout/activity_login.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_edit.xml",
+        "source": "br.com.fox.editflow.app-main-35:/layout/activity_edit.xml"
+    }
+]

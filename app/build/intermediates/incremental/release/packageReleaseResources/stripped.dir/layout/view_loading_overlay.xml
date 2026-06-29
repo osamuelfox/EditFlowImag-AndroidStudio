@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadingOverlayRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/overlayBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="24dp"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/spacing_xl"
+        android:background="@drawable/bg_overlay_card"
+        android:elevation="2dp">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/overlayProgress"
+            android:layout_width="@dimen/progress_size"
+            android:layout_height="@dimen/progress_size"
+            android:indeterminate="true"
+            app:indicatorColor="@color/primaryColor"
+            app:trackColor="@color/primaryLightColor"
+            app:trackThickness="@dimen/progress_stroke"
+            android:contentDescription="@string/loading_indicator_desc" />
+
+        <TextView
+            android:id="@+id/overlayMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:text="@string/loading_uploading"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/text_body_lg"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center" />
+    </LinearLayout>
+
+</FrameLayout>

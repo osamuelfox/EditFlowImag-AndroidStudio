@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res"><file name="slide_out_right" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/anim/slide_out_right.xml" qualifiers="" type="anim"/><file name="fade_out" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/anim/fade_out.xml" qualifiers="" type="anim"/><file name="slide_in_right" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/anim/slide_in_right.xml" qualifiers="" type="anim"/><file name="slide_in_left" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/anim/slide_in_left.xml" qualifiers="" type="anim"/><file name="slide_out_left" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/anim/slide_out_left.xml" qualifiers="" type="anim"/><file name="fade_in" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/anim/fade_in.xml" qualifiers="" type="anim"/><file name="bg_overlay_card" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/drawable/bg_overlay_card.xml" qualifiers="" type="drawable"/><file name="activity_edit" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/layout/activity_edit.xml" qualifiers="" type="layout"/><file name="activity_login" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/layout/activity_login.xml" qualifiers="" type="layout"/><file name="activity_main" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="view_loading_overlay" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/layout/view_loading_overlay.xml" qualifiers="" type="layout"/><file name="activity_result" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/layout/activity_result.xml" qualifiers="" type="layout"/><file name="view_empty_state" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/layout/view_empty_state.xml" qualifiers="" type="layout"/><file name="activity_register" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/layout/activity_register.xml" qualifiers="" type="layout"/><file name="text_input_hint_color" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/color/text_input_hint_color.xml" qualifiers="" type="color"/><file name="input_stroke_color" path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/color/input_stroke_color.xml" qualifiers="" type="color"/><file path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/values/dimens.xml" qualifiers=""><dimen name="spacing_2xs">2dp</dimen><dimen name="spacing_xs">4dp</dimen><dimen name="spacing_sm">8dp</dimen><dimen name="spacing_md">16dp</dimen><dimen name="spacing_lg">24dp</dimen><dimen name="spacing_xl">32dp</dimen><dimen name="spacing_2xl">48dp</dimen><dimen name="spacing_3xl">64dp</dimen><dimen name="corner_button">12dp</dimen><dimen name="corner_card">16dp</dimen><dimen name="corner_input">8dp</dimen><dimen name="corner_dialog">16dp</dimen><dimen name="corner_chip">8dp</dimen><dimen name="corner_overlay">0dp</dimen><dimen name="elevation_card">2dp</dimen><dimen name="elevation_card_raised">6dp</dimen><dimen name="elevation_dialog">8dp</dimen><dimen name="elevation_fab">12dp</dimen><dimen name="icon_size_sm">20dp</dimen><dimen name="icon_size">24dp</dimen><dimen name="icon_size_lg">48dp</dimen><dimen name="icon_size_xl">96dp</dimen><dimen name="text_caption">12sp</dimen><dimen name="text_body_sm">13sp</dimen><dimen name="text_body">14sp</dimen><dimen name="text_body_lg">16sp</dimen><dimen name="text_subtitle">18sp</dimen><dimen name="text_title">20sp</dimen><dimen name="text_headline">24sp</dimen><dimen name="text_display">32sp</dimen><dimen name="button_height">52dp</dimen><dimen name="button_height_sm">40dp</dimen><dimen name="input_height">56dp</dimen><dimen name="toolbar_height">56dp</dimen><dimen name="progress_size">48dp</dimen><dimen name="progress_stroke">4dp</dimen><dimen name="screen_padding_h">24dp</dimen><dimen name="screen_padding_v">16dp</dimen><dimen name="card_padding">20dp</dimen><dimen name="section_gap">32dp</dimen></file><file path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/values/themes.xml" qualifiers=""><style name="Theme.EditFlowApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/primaryTextColor</item>
+
+        
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnError">@color/colorOnError</item>
+
+        
+        <item name="android:statusBarColor">@color/backgroundColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+
+        
+        <item name="android:windowAnimationStyle">@style/Animation.EditFlow.Activity</item>
+
+        
+        <item name="textInputStyle">@style/Widget.EditFlow.TextInputLayout</item>
+    </style><style name="Animation.EditFlow.Activity" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style><style name="Widget.EditFlow.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/corner_input</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/corner_input</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/corner_input</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/corner_input</item>
+        <item name="boxStrokeColor">@color/borderColor</item> 
+        <item name="hintTextColor">@color/hintTextColor</item> 
+    </style><style name="RoundedButton" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">@dimen/corner_button</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_body_lg</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style><style name="RoundedOutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">@dimen/corner_button</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_body_lg</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="strokeColor">@color/borderColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style><style name="RoundedTextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="cornerRadius">@dimen/corner_button</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">@dimen/button_height_sm</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_body_lg</item>
+    </style><style name="Widget.EditFlow.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/corner_card</item>
+        <item name="cardElevation">@dimen/elevation_card</item>
+        <item name="cardBackgroundColor">@color/colorSurface</item>
+    </style><style name="TextAppearance.EditFlow.Headline" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textSize">@dimen/text_headline</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style><style name="TextAppearance.EditFlow.Title" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style><style name="TextAppearance.EditFlow.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style><style name="TextAppearance.EditFlow.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textColor">@color/hintTextColor</item>
+    </style><style name="Widget.EditFlow.LoadingOverlay" parent="android:Widget">
+        <item name="android:background">@color/overlayBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style></file><file path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">EditFlow</string><string name="login_title">EditFlow</string><string name="login_subtitle">Transforme fotos em materiais de\nmarketing profissionais com IA</string><string name="action_login">Entrar</string><string name="action_register">Cadastrar</string><string name="action_create_account">Criar Conta</string><string name="action_cancel">Cancelar</string><string name="action_confirm">Confirmar</string><string name="action_retry">Tentar Novamente</string><string name="prompt_email">E-mail</string><string name="prompt_password">Senha</string><string name="prompt_name">Nome completo</string><string name="prompt_hint">Descreva o que deseja mudar na imagem…</string><string name="error_field_required">Campo obrigatório</string><string name="error_invalid_email">E-mail inválido</string><string name="error_password_short">Senha deve ter pelo menos 6 caracteres</string><string name="error_name_short">Nome deve ter pelo menos 2 caracteres</string><string name="error_connection">Sem conexão com o servidor. Verifique sua internet e tente novamente.</string><string name="error_timeout">Tempo limite excedido. O servidor demorou muito para responder.</string><string name="error_login">E-mail ou senha incorretos. Verifique e tente novamente.</string><string name="error_login_server">Erro %d ao fazer login. Tente novamente.</string><string name="error_register">Não foi possível criar a conta. O e-mail pode já estar em uso.</string><string name="error_register_server">Erro %d ao criar conta. Tente novamente.</string><string name="error_upload">Falha ao enviar a imagem. Tente novamente.</string><string name="error_upload_too_large">Imagem muito grande. O tamanho máximo é 10 MB.</string><string name="error_upload_server">Erro %d ao enviar imagem.</string><string name="error_generate">Falha ao iniciar a geração. Tente novamente.</string><string name="error_generate_server">Erro %d ao iniciar geração.</string><string name="error_generation_failed">A geração falhou no servidor. Tente novamente.</string><string name="error_generation_failed_detail">Falha: %s</string><string name="error_image_processing">Erro ao processar a imagem selecionada.</string><string name="error_permission_denied">Permissão de acesso à galeria negada.</string><string name="error_download_unavailable">Link de download não disponível.</string><string name="error_download">Erro ao salvar a imagem. Tente novamente.</string><string name="error_image_id_missing">Erro interno: ID da imagem não encontrado.</string><string name="loading_logging_in">Entrando…</string><string name="loading_registering">Criando conta…</string><string name="loading_uploading">Enviando imagem…</string><string name="loading_generating">Gerando imagem com IA…</string><string name="loading_downloading">Salvando na galeria…</string><string name="success_image_saved">Imagem salva na galeria!</string><string name="dialog_cancel_title">Cancelar operação?</string><string name="dialog_cancel_generation_message">A geração da imagem será cancelada e você voltará para a tela anterior.</string><string name="dialog_cancel_loading_message">O processo em andamento será interrompido.</string><string name="dialog_cancel_confirm">Cancelar operação</string><string name="dialog_cancel_dismiss">Aguardar</string><string name="home_title">Transforme Suas Fotos</string><string name="home_subtitle">Envie uma foto e deixe a IA criar materiais de marketing profissionais</string><string name="home_upload_box">Toque para selecionar uma foto\nPNG, JPG — até 10 MB</string><string name="home_upload_icon_desc">Ícone de upload</string><string name="edit_section_title">Prompt personalizado</string><string name="edit_generate_btn">Gerar Imagem Profissional</string><string name="edit_generating">Gerando…</string><string name="edit_prompt_empty">Digite uma instrução para editar a imagem.</string><string name="result_download">Baixar Imagem</string><string name="result_edit_other">Editar Outra</string><string name="result_analysis_title">Análise</string><string name="result_changes_title">Alterações realizadas</string><string name="result_description_title">Descrição</string><string name="preview_image_description">Prévia da imagem selecionada</string><string name="result_image_description">Imagem gerada pela IA</string><string name="loading_indicator_desc">Carregando, aguarde</string><string name="empty_state_title">Nenhuma imagem</string><string name="empty_state_message">Selecione uma foto para começar a editar com IA.</string></file><file path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/main/res/values/colors.xml" qualifiers=""><color name="primaryColor">#5C6BC0</color><color name="primaryLightColor">#8E99F3</color><color name="primaryDarkColor">#26418F</color><color name="colorOnPrimary">#FFFFFF</color><color name="secondaryColor">#7C4DFF</color><color name="secondaryLightColor">#B47CFF</color><color name="secondaryDarkColor">#3F1DCB</color><color name="colorOnSecondary">#FFFFFF</color><color name="colorSurface">#FFFFFF</color><color name="colorSurfaceVariant">#F0F0F8</color><color name="colorOutline">#BDBDBD</color><color name="backgroundColor">#F5F6FB</color><color name="inputBackground">#F8F9FA</color><color name="primaryTextColor">#1A1A2E</color><color name="secondaryTextColor">#6E6E8A</color><color name="hintTextColor">#9E9EB8</color><color name="colorError">#E53935</color><color name="colorOnError">#FFFFFF</color><color name="colorSuccess">#2E7D32</color><color name="colorWarning">#F57F17</color><color name="overlayBackground">#99000000</color><color name="white">#FFFFFF</color><color name="black">#000000</color><color name="borderColor">#E0E0EC</color><color name="dividerColor">#EBEBF5</color><color name="disabledBackground">#E8E8F0</color><color name="disabledText">#ABABC0</color></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/release/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release" generated-set="release$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/src/release/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/build/generated/res/resValues/release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/fox/Downloads/EditFlowImag-AndroidStudio-master/app/build/generated/res/resValues/release"/></dataSet><mergedItems/></merger>

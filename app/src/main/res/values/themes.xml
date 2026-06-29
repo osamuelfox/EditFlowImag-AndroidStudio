@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ── Tema principal ── -->
+    <style name="Theme.EditFlowApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Cores principais -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <!-- Cores secundárias -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <!-- Superfícies -->
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/primaryTextColor</item>
+
+        <!-- Erro -->
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnError">@color/colorOnError</item>
+
+        <!-- Status bar e fundo -->
+        <item name="android:statusBarColor">@color/backgroundColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+
+        <!-- Animações de transição entre Activities -->
+        <item name="android:windowAnimationStyle">@style/Animation.EditFlow.Activity</item>
+
+        <!-- Estilo padrão de TextInputLayout -->
+        <item name="textInputStyle">@style/Widget.EditFlow.TextInputLayout</item>
+    </style>
+
+    <!-- ── Animações ── -->
+    <style name="Animation.EditFlow.Activity" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!-- ── Inputs ── -->
+    <style name="Widget.EditFlow.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/corner_input</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/corner_input</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/corner_input</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/corner_input</item>
+        <item name="boxStrokeColor">@color/borderColor</item> <!-- Ajustado para usar borderColor existente -->
+        <item name="hintTextColor">@color/hintTextColor</item> <!-- Ajustado para usar hintTextColor existente -->
+    </style>
+
+    <!-- ── Botões ── -->
+    <style name="RoundedButton" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">@dimen/corner_button</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_body_lg</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="RoundedOutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">@dimen/corner_button</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_body_lg</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="strokeColor">@color/borderColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="RoundedTextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="cornerRadius">@dimen/corner_button</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">@dimen/button_height_sm</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_body_lg</item>
+    </style>
+
+    <!-- ── Cards ── -->
+    <style name="Widget.EditFlow.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/corner_card</item>
+        <item name="cardElevation">@dimen/elevation_card</item>
+        <item name="cardBackgroundColor">@color/colorSurface</item>
+    </style>
+
+    <!-- ── Tipografia ── -->
+    <style name="TextAppearance.EditFlow.Headline" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textSize">@dimen/text_headline</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.EditFlow.Title" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.EditFlow.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="TextAppearance.EditFlow.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textColor">@color/hintTextColor</item>
+    </style>
+
+    <!-- ── Loading Overlay ── -->
+    <style name="Widget.EditFlow.LoadingOverlay" parent="android:Widget">
+        <item name="android:background">@color/overlayBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+</resources>

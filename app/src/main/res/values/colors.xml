@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand / Primary -->
+    <color name="primaryColor">#5C6BC0</color>
+    <color name="primaryLightColor">#8E99F3</color>
+    <color name="primaryDarkColor">#26418F</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Secondary / Accent -->
+    <color name="secondaryColor">#7C4DFF</color>
+    <color name="secondaryLightColor">#B47CFF</color>
+    <color name="secondaryDarkColor">#3F1DCB</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+
+    <!-- Surface -->
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorSurfaceVariant">#F0F0F8</color>
+    <color name="colorOutline">#BDBDBD</color>
+
+    <!-- Background -->
+    <color name="backgroundColor">#F5F6FB</color>
+    <color name="inputBackground">#F8F9FA</color>
+
+    <!-- Text -->
+    <color name="primaryTextColor">#1A1A2E</color>
+    <color name="secondaryTextColor">#6E6E8A</color>
+    <color name="hintTextColor">#9E9EB8</color>
+
+    <!-- Status -->
+    <color name="colorError">#E53935</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorSuccess">#2E7D32</color>
+    <color name="colorWarning">#F57F17</color>
+
+    <!-- Overlay -->
+    <color name="overlayBackground">#99000000</color>
+
+    <!-- Misc -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="borderColor">#E0E0EC</color>
+    <color name="dividerColor">#EBEBF5</color>
+
+    <!-- Disabled state -->
+    <color name="disabledBackground">#E8E8F0</color>
+    <color name="disabledText">#ABABC0</color>
+</resources>

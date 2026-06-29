@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/anim_slide_in_right.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/anim_fade_out.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/anim/fade_out.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_activity_edit.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/layout/activity_edit.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/anim_fade_in.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/anim/fade_in.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/anim_slide_out_right.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/anim_slide_in_left.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/anim/slide_in_left.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/color_text_input_hint_color.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/color/text_input_hint_color.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_activity_register.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/layout/activity_register.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/anim_slide_out_left.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/anim/slide_out_left.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_activity_login.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/layout/activity_login.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/drawable_bg_overlay_card.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/drawable/bg_overlay_card.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/color_input_stroke_color.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/color/input_stroke_color.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_view_loading_overlay.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/layout/view_loading_overlay.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_view_empty_state.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/layout/view_empty_state.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_activity_result.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/layout/activity_result.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "br.com.fox.editflow.app-main-34:/layout/activity_main.xml"
+    }
+]
