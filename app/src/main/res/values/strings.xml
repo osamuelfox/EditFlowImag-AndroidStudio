@@ -87,4 +87,45 @@
     <!-- ── Estado vazio ── -->
     <string name="empty_state_title">Nenhuma imagem</string>
     <string name="empty_state_message">Selecione uma foto para começar a editar com IA.</string>
+
+    <!-- ── Créditos ── -->
+    <string name="credits_label">%d/2 Créditos</string>
+    <string name="error_insufficient_credits">Você não tem créditos suficientes</string>
+    <string name="dialog_no_credits_title">Créditos Insuficientes</string>
+    <string name="dialog_no_credits_message">Você não possui créditos suficientes para gerar esta imagem. Note que há um limite de 2 edições por conta. Deseja ver nossos planos?</string>
+    <string name="action_view_plans">Ver Planos</string>
+
+    <!-- ── Planos ── -->
+    <string name="plans_title">Seus créditos acabaram!</string>
+    <string name="plans_subtitle">Escolha um plano para continuar editando suas imagens</string>
+    <string name="action_upgrade">Upgrade</string>
+
+    <!-- ── Guided Prompt ── -->
+    <string name="tab_free_prompt">Livre</string>
+    <string name="tab_guided_prompt">Guiado</string>
+    <string name="step_format">Passo %d de 4</string>
+    <string name="question_style">Qual o estilo visual desejado?</string>
+    <string name="question_platform">Para qual plataforma é a imagem?</string>
+    <string name="question_product">Qual o produto ou serviço?</string>
+    <string name="question_tone">Qual o tom da comunicação?</string>
+    <string name="hint_product">Ex: Tênis Esportivo</string>
+    <string name="action_back">Voltar</string>
+    <string name="action_next">Próximo</string>
+    <string name="action_generate_wizard">Gerar Imagem</string>
+
+    <!-- ── Guided Options ── -->
+    <string name="style_modern">Moderno</string>
+    <string name="style_minimalist">Minimalista</string>
+    <string name="style_corporate">Corporativo</string>
+    <string name="style_creative">Criativo</string>
+
+    <string name="platform_instagram">Instagram</string>
+    <string name="platform_linkedin">LinkedIn</string>
+    <string name="platform_whatsapp">WhatsApp</string>
+    <string name="platform_ecommerce">E-commerce</string>
+
+    <string name="tone_professional">Profissional</string>
+    <string name="tone_casual">Descontraído</string>
+    <string name="tone_urgent">Urgente</string>
+    <string name="tone_inspiring">Inspirador</string>
 </resources>

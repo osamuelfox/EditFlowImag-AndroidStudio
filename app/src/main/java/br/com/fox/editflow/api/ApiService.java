@@ -6,6 +6,7 @@ import br.com.fox.editflow.models.GenerationResponse;
 import br.com.fox.editflow.models.ImageResponse;
 import br.com.fox.editflow.models.LoginRequest;
 import br.com.fox.editflow.models.RegisterRequest;
+import br.com.fox.editflow.models.UserProfile;
 import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -21,6 +22,9 @@ public interface ApiService {
 
     @POST("api/auth/register")
     Call<AuthResponse> register(@Body RegisterRequest request);
+
+    @GET("api/user/profile")
+    Call<UserProfile> getUserProfile();
 
     @Multipart
     @POST("api/images")

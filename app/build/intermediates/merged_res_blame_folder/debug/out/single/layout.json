@@ -1,30 +1,50 @@
 [
     {
-        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_register.xml",
-        "source": "br.com.fox.editflow.app-main-35:/layout/activity_register.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-mergeDebugResources-32:/layout/fragment_guided_prompt.xml",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/fragment_guided_prompt.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_result.xml",
-        "source": "br.com.fox.editflow.app-main-35:/layout/activity_result.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-mergeDebugResources-32:/layout/layout_guided_chip.xml",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/layout_guided_chip.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_register.xml",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/activity_register.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_main.xml",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_login.xml",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-mergeDebugResources-32:/layout/view_loading_overlay.xml",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/view_loading_overlay.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-mergeDebugResources-32:/layout/view_empty_state.xml",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/view_empty_state.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_plans.xml",
+        "source": "br.com.fox.editflow.app-main-35:/layout/activity_plans.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-mergeDebugResources-32:/layout/fragment_free_prompt.xml",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/fragment_free_prompt.xml"
     },
     {
         "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_main.xml",
         "source": "br.com.fox.editflow.app-main-35:/layout/activity_main.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/view_empty_state.xml",
-        "source": "br.com.fox.editflow.app-main-35:/layout/view_empty_state.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_edit.xml",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/activity_edit.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/view_loading_overlay.xml",
-        "source": "br.com.fox.editflow.app-main-35:/layout/view_loading_overlay.xml"
-    },
-    {
-        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_login.xml",
-        "source": "br.com.fox.editflow.app-main-35:/layout/activity_login.xml"
-    },
-    {
-        "merged": "br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_edit.xml",
-        "source": "br.com.fox.editflow.app-main-35:/layout/activity_edit.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-mergeDebugResources-32:/layout/activity_result.xml",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/activity_result.xml"
     }
 ]

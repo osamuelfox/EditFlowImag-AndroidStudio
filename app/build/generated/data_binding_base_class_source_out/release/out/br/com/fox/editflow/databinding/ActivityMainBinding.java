@@ -5,6 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,10 +24,25 @@ public final class ActivityMainBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
+  public final ImageButton btnLogout;
+
+  @NonNull
+  public final LinearLayout btnUpgrade;
+
+  @NonNull
   public final MaterialCardView cardUpload;
 
   @NonNull
+  public final LinearLayout llHeader;
+
+  @NonNull
   public final ViewLoadingOverlayBinding loadingOverlay;
+
+  @NonNull
+  public final ProgressBar pbCredits;
+
+  @NonNull
+  public final TextView tvCredits;
 
   @NonNull
   public final TextView tvHomeSubtitle;
@@ -35,15 +53,27 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView tvSupportedFormats;
 
-  private ActivityMainBinding(@NonNull FrameLayout rootView, @NonNull MaterialCardView cardUpload,
-      @NonNull ViewLoadingOverlayBinding loadingOverlay, @NonNull TextView tvHomeSubtitle,
-      @NonNull TextView tvHomeTitle, @NonNull TextView tvSupportedFormats) {
+  @NonNull
+  public final TextView tvUserName;
+
+  private ActivityMainBinding(@NonNull FrameLayout rootView, @NonNull ImageButton btnLogout,
+      @NonNull LinearLayout btnUpgrade, @NonNull MaterialCardView cardUpload,
+      @NonNull LinearLayout llHeader, @NonNull ViewLoadingOverlayBinding loadingOverlay,
+      @NonNull ProgressBar pbCredits, @NonNull TextView tvCredits, @NonNull TextView tvHomeSubtitle,
+      @NonNull TextView tvHomeTitle, @NonNull TextView tvSupportedFormats,
+      @NonNull TextView tvUserName) {
     this.rootView = rootView;
+    this.btnLogout = btnLogout;
+    this.btnUpgrade = btnUpgrade;
     this.cardUpload = cardUpload;
+    this.llHeader = llHeader;
     this.loadingOverlay = loadingOverlay;
+    this.pbCredits = pbCredits;
+    this.tvCredits = tvCredits;
     this.tvHomeSubtitle = tvHomeSubtitle;
     this.tvHomeTitle = tvHomeTitle;
     this.tvSupportedFormats = tvSupportedFormats;
+    this.tvUserName = tvUserName;
   }
 
   @Override
@@ -73,9 +103,27 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnLogout;
+      ImageButton btnLogout = ViewBindings.findChildViewById(rootView, id);
+      if (btnLogout == null) {
+        break missingId;
+      }
+
+      id = R.id.btnUpgrade;
+      LinearLayout btnUpgrade = ViewBindings.findChildViewById(rootView, id);
+      if (btnUpgrade == null) {
+        break missingId;
+      }
+
       id = R.id.cardUpload;
       MaterialCardView cardUpload = ViewBindings.findChildViewById(rootView, id);
       if (cardUpload == null) {
+        break missingId;
+      }
+
+      id = R.id.llHeader;
+      LinearLayout llHeader = ViewBindings.findChildViewById(rootView, id);
+      if (llHeader == null) {
         break missingId;
       }
 
@@ -85,6 +133,18 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
       ViewLoadingOverlayBinding binding_loadingOverlay = ViewLoadingOverlayBinding.bind(loadingOverlay);
+
+      id = R.id.pbCredits;
+      ProgressBar pbCredits = ViewBindings.findChildViewById(rootView, id);
+      if (pbCredits == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCredits;
+      TextView tvCredits = ViewBindings.findChildViewById(rootView, id);
+      if (tvCredits == null) {
+        break missingId;
+      }
 
       id = R.id.tvHomeSubtitle;
       TextView tvHomeSubtitle = ViewBindings.findChildViewById(rootView, id);
@@ -104,8 +164,15 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((FrameLayout) rootView, cardUpload, binding_loadingOverlay,
-          tvHomeSubtitle, tvHomeTitle, tvSupportedFormats);
+      id = R.id.tvUserName;
+      TextView tvUserName = ViewBindings.findChildViewById(rootView, id);
+      if (tvUserName == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((FrameLayout) rootView, btnLogout, btnUpgrade, cardUpload,
+          llHeader, binding_loadingOverlay, pbCredits, tvCredits, tvHomeSubtitle, tvHomeTitle,
+          tvSupportedFormats, tvUserName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

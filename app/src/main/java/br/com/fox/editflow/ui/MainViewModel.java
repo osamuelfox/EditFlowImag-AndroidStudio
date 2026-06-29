@@ -23,6 +23,7 @@ import java.util.concurrent.TimeUnit;
 import br.com.fox.editflow.api.ApiService;
 import br.com.fox.editflow.api.RetrofitClient;
 import br.com.fox.editflow.models.ImageResponse;
+import br.com.fox.editflow.models.UserProfile;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
@@ -35,12 +36,33 @@ public class MainViewModel extends ViewModel {
     private static final long TIMEOUT_MS = 30_000L;
 
     public final MutableLiveData<UiState> uploadState = new MutableLiveData<>(new UiState.Idle());
+    public final MutableLiveData<UiState> profileState = new MutableLiveData<>(new UiState.Idle());
 
     private final Handler mainHandler = new Handler(Looper.getMainLooper());
     private final ExecutorService ioExecutor = Executors.newSingleThreadExecutor();
     private final ScheduledExecutorService scheduler = new ScheduledThreadPoolExecutor(1);
     private ScheduledFuture<?> timeoutFuture;
     private Call<ImageResponse> pendingCall;
+
+    public void fetchUserProfile(Context context) {
+        profileState.setValue(new UiState.Loading(""));
+        ApiService api = RetrofitClient.getClient(context).create(ApiService.class);
+        api.getUserProfile().enqueue(new Callback<UserProfile>() {
+            @Override
+            public void onResponse(Call<UserProfile> call, Response<UserProfile> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    profileState.postValue(new UiState.Success<>(response.body()));
+                } else {
+                    profileState.postValue(new UiState.Error(String.valueOf(response.code()), true));
+                }
+            }
+
+            @Override
+            public void onFailure(Call<UserProfile> call, Throwable t) {
+                profileState.postValue(new UiState.Error("connection", true));
+            }
+        });
+    }
 
     public void uploadImage(Context context, Uri imageUri, String loadingMsg) {
         uploadState.setValue(new UiState.Loading(loadingMsg));

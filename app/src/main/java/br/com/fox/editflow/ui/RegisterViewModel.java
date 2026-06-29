@@ -37,7 +37,7 @@ public class RegisterViewModel extends ViewModel {
         scheduleTimeout(context);
 
         ApiService api = RetrofitClient.getClient(context).create(ApiService.class);
-        pendingCall = api.register(new RegisterRequest(name, email, password));
+        pendingCall = api.register(new RegisterRequest(name, email, password, 2));
         pendingCall.enqueue(new Callback<AuthResponse>() {
             @Override
             public void onResponse(Call<AuthResponse> call, Response<AuthResponse> response) {
@@ -45,7 +45,11 @@ public class RegisterViewModel extends ViewModel {
                 if (!(registerState.getValue() instanceof UiState.Loading)) return;
 
                 if (response.isSuccessful() && response.body() != null) {
-                    new TokenManager(context).saveToken(response.body().getToken());
+                    TokenManager tm = new TokenManager(context);
+                    String email = response.body().getEmail();
+                    String name = response.body().getName();
+                    tm.saveAuth(response.body().getToken(), email, name);
+                    tm.addCredits(email, 2); // Inicializa com 2 créditos no registro
                     registerState.postValue(new UiState.Success<>(response.body()));
                 } else if (response.code() == 409) {
                     // E-mail já em uso — erro inline no campo de e-mail

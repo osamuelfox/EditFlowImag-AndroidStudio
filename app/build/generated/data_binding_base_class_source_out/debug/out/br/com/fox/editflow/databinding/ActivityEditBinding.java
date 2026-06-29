@@ -10,10 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import androidx.viewpager2.widget.ViewPager2;
 import br.com.fox.editflow.R;
-import com.google.android.material.button.MaterialButton;
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
+import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,29 +22,25 @@ public final class ActivityEditBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final MaterialButton btnGenerate;
-
-  @NonNull
-  public final TextInputEditText etPrompt;
-
-  @NonNull
   public final ImageView ivPreview;
 
   @NonNull
   public final ViewLoadingOverlayBinding loadingOverlay;
 
   @NonNull
-  public final TextInputLayout tilPrompt;
+  public final TabLayout tabLayout;
 
-  private ActivityEditBinding(@NonNull FrameLayout rootView, @NonNull MaterialButton btnGenerate,
-      @NonNull TextInputEditText etPrompt, @NonNull ImageView ivPreview,
-      @NonNull ViewLoadingOverlayBinding loadingOverlay, @NonNull TextInputLayout tilPrompt) {
+  @NonNull
+  public final ViewPager2 viewPager;
+
+  private ActivityEditBinding(@NonNull FrameLayout rootView, @NonNull ImageView ivPreview,
+      @NonNull ViewLoadingOverlayBinding loadingOverlay, @NonNull TabLayout tabLayout,
+      @NonNull ViewPager2 viewPager) {
     this.rootView = rootView;
-    this.btnGenerate = btnGenerate;
-    this.etPrompt = etPrompt;
     this.ivPreview = ivPreview;
     this.loadingOverlay = loadingOverlay;
-    this.tilPrompt = tilPrompt;
+    this.tabLayout = tabLayout;
+    this.viewPager = viewPager;
   }
 
   @Override
@@ -75,18 +70,6 @@ public final class ActivityEditBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnGenerate;
-      MaterialButton btnGenerate = ViewBindings.findChildViewById(rootView, id);
-      if (btnGenerate == null) {
-        break missingId;
-      }
-
-      id = R.id.etPrompt;
-      TextInputEditText etPrompt = ViewBindings.findChildViewById(rootView, id);
-      if (etPrompt == null) {
-        break missingId;
-      }
-
       id = R.id.ivPreview;
       ImageView ivPreview = ViewBindings.findChildViewById(rootView, id);
       if (ivPreview == null) {
@@ -100,14 +83,20 @@ public final class ActivityEditBinding implements ViewBinding {
       }
       ViewLoadingOverlayBinding binding_loadingOverlay = ViewLoadingOverlayBinding.bind(loadingOverlay);
 
-      id = R.id.tilPrompt;
-      TextInputLayout tilPrompt = ViewBindings.findChildViewById(rootView, id);
-      if (tilPrompt == null) {
+      id = R.id.tabLayout;
+      TabLayout tabLayout = ViewBindings.findChildViewById(rootView, id);
+      if (tabLayout == null) {
         break missingId;
       }
 
-      return new ActivityEditBinding((FrameLayout) rootView, btnGenerate, etPrompt, ivPreview,
-          binding_loadingOverlay, tilPrompt);
+      id = R.id.viewPager;
+      ViewPager2 viewPager = ViewBindings.findChildViewById(rootView, id);
+      if (viewPager == null) {
+        break missingId;
+      }
+
+      return new ActivityEditBinding((FrameLayout) rootView, ivPreview, binding_loadingOverlay,
+          tabLayout, viewPager);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

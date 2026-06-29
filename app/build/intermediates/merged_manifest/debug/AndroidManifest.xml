@@ -46,6 +46,7 @@
         <activity android:name="br.com.fox.editflow.MainActivity" />
         <activity android:name="br.com.fox.editflow.EditActivity" />
         <activity android:name="br.com.fox.editflow.ResultActivity" />
+        <activity android:name="br.com.fox.editflow.PlansActivity" />
 
         <meta-data
             android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"

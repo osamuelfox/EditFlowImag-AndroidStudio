@@ -67,18 +67,26 @@
     <dimen name="text_subtitle">18sp</dimen>
     <dimen name="text_title">20sp</dimen>
     <dimen name="toolbar_height">56dp</dimen>
+    <string name="action_back">Voltar</string>
     <string name="action_cancel">Cancelar</string>
     <string name="action_confirm">Confirmar</string>
     <string name="action_create_account">Criar Conta</string>
+    <string name="action_generate_wizard">Gerar Imagem</string>
     <string name="action_login">Entrar</string>
+    <string name="action_next">Próximo</string>
     <string name="action_register">Cadastrar</string>
     <string name="action_retry">Tentar Novamente</string>
+    <string name="action_upgrade">Upgrade</string>
+    <string name="action_view_plans">Ver Planos</string>
     <string name="app_name">EditFlow</string>
+    <string name="credits_label">%d/2 Créditos</string>
     <string name="dialog_cancel_confirm">Cancelar operação</string>
     <string name="dialog_cancel_dismiss">Aguardar</string>
     <string name="dialog_cancel_generation_message">A geração da imagem será cancelada e você voltará para a tela anterior.</string>
     <string name="dialog_cancel_loading_message">O processo em andamento será interrompido.</string>
     <string name="dialog_cancel_title">Cancelar operação?</string>
+    <string name="dialog_no_credits_message">Você não possui créditos suficientes para gerar esta imagem. Note que há um limite de 2 edições por conta. Deseja ver nossos planos?</string>
+    <string name="dialog_no_credits_title">Créditos Insuficientes</string>
     <string name="edit_generate_btn">Gerar Imagem Profissional</string>
     <string name="edit_generating">Gerando…</string>
     <string name="edit_prompt_empty">Digite uma instrução para editar a imagem.</string>
@@ -95,6 +103,7 @@
     <string name="error_generation_failed_detail">Falha: %s</string>
     <string name="error_image_id_missing">Erro interno: ID da imagem não encontrado.</string>
     <string name="error_image_processing">Erro ao processar a imagem selecionada.</string>
+    <string name="error_insufficient_credits">Você não tem créditos suficientes</string>
     <string name="error_invalid_email">E-mail inválido</string>
     <string name="error_login">E-mail ou senha incorretos. Verifique e tente novamente.</string>
     <string name="error_login_server">Erro %d ao fazer login. Tente novamente.</string>
@@ -107,6 +116,7 @@
     <string name="error_upload">Falha ao enviar a imagem. Tente novamente.</string>
     <string name="error_upload_server">Erro %d ao enviar imagem.</string>
     <string name="error_upload_too_large">Imagem muito grande. O tamanho máximo é 10 MB.</string>
+    <string name="hint_product">Ex: Tênis Esportivo</string>
     <string name="home_subtitle">Envie uma foto e deixe a IA criar materiais de marketing profissionais</string>
     <string name="home_title">Transforme Suas Fotos</string>
     <string name="home_upload_box">Toque para selecionar uma foto\nPNG, JPG — até 10 MB</string>
@@ -119,23 +129,51 @@
     <string name="loading_uploading">Enviando imagem…</string>
     <string name="login_subtitle">Transforme fotos em materiais de\nmarketing profissionais com IA</string>
     <string name="login_title">EditFlow</string>
+    <string name="plans_subtitle">Escolha um plano para continuar editando suas imagens</string>
+    <string name="plans_title">Seus créditos acabaram!</string>
+    <string name="platform_ecommerce">E-commerce</string>
+    <string name="platform_instagram">Instagram</string>
+    <string name="platform_linkedin">LinkedIn</string>
+    <string name="platform_whatsapp">WhatsApp</string>
     <string name="preview_image_description">Prévia da imagem selecionada</string>
     <string name="prompt_email">E-mail</string>
     <string name="prompt_hint">Descreva o que deseja mudar na imagem…</string>
     <string name="prompt_name">Nome completo</string>
     <string name="prompt_password">Senha</string>
+    <string name="question_platform">Para qual plataforma é a imagem?</string>
+    <string name="question_product">Qual o produto ou serviço?</string>
+    <string name="question_style">Qual o estilo visual desejado?</string>
+    <string name="question_tone">Qual o tom da comunicação?</string>
     <string name="result_analysis_title">Análise</string>
     <string name="result_changes_title">Alterações realizadas</string>
     <string name="result_description_title">Descrição</string>
     <string name="result_download">Baixar Imagem</string>
     <string name="result_edit_other">Editar Outra</string>
     <string name="result_image_description">Imagem gerada pela IA</string>
+    <string name="step_format">Passo %d de 4</string>
+    <string name="style_corporate">Corporativo</string>
+    <string name="style_creative">Criativo</string>
+    <string name="style_minimalist">Minimalista</string>
+    <string name="style_modern">Moderno</string>
     <string name="success_image_saved">Imagem salva na galeria!</string>
+    <string name="tab_free_prompt">Livre</string>
+    <string name="tab_guided_prompt">Guiado</string>
+    <string name="tone_casual">Descontraído</string>
+    <string name="tone_inspiring">Inspirador</string>
+    <string name="tone_professional">Profissional</string>
+    <string name="tone_urgent">Urgente</string>
     <style name="Animation.EditFlow.Activity" parent="android:Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
         <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
         <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
         <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+    <style name="PlanFeature" parent="TextAppearance.EditFlow.Body">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
     </style>
     <style name="RoundedButton" parent="Widget.MaterialComponents.Button">
         <item name="cornerRadius">@dimen/corner_button</item>

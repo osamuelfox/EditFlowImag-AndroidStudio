@@ -47,7 +47,11 @@ public class LoginViewModel extends ViewModel {
                 if (!(loginState.getValue() instanceof UiState.Loading)) return;
 
                 if (response.isSuccessful() && response.body() != null) {
-                    new TokenManager(context).saveToken(response.body().getToken());
+                    TokenManager tm = new TokenManager(context);
+                    String email = response.body().getEmail();
+                    String name = response.body().getName();
+                    tm.saveAuth(response.body().getToken(), email, name);
+                    tm.addCredits(email, 2); // Adiciona 2 créditos a cada login
                     loginState.postValue(new UiState.Success<>(response.body()));
                 } else if (response.code() == 401 || response.code() == 403) {
                     loginState.postValue(new UiState.Error(null, false)); // erro inline

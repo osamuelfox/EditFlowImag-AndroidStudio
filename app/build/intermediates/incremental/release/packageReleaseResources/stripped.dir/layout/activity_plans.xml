@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_md">
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@color/secondaryTextColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plans_title"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/spacing_sm" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plans_subtitle"
+            android:textAlignment="center"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="@dimen/text_body"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:layout_marginBottom="@dimen/spacing_lg" />
+
+        <!-- Plan Cards Container -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/spacing_md">
+
+                <!-- Starter Plan -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/corner_card"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="@dimen/spacing_md">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/card_padding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⚡ Starter"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="R$29,90"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/spacing_sm" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30 créditos"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="@dimen/text_body"
+                            android:layout_marginBottom="@dimen/spacing_md" />
+
+                        <TextView style="@style/PlanFeature" android:text="✓ 30 edições profissionais" />
+                        <TextView style="@style/PlanFeature" android:text="✓ Downloads em HD" />
+                        <TextView style="@style/PlanFeature" android:text="✓ Processamento rápido" />
+                        <TextView style="@style/PlanFeature" android:text="✓ Suporte por e-mail" />
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/RoundedOutlineButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Escolher Starter"
+                            android:layout_marginTop="@dimen/spacing_lg" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Pro Plan (Highlighted) -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/corner_card"
+                    app:cardElevation="4dp"
+                    app:strokeColor="@color/primaryColor"
+                    app:strokeWidth="2dp"
+                    android:layout_marginEnd="@dimen/spacing_md">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/card_padding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mais popular"
+                            android:background="@drawable/bg_popular_badge"
+                            android:textColor="@color/white"
+                            android:paddingHorizontal="@dimen/spacing_sm"
+                            android:paddingVertical="2dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="@dimen/spacing_sm"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="☆ Pro"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="R$49,90"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/spacing_sm" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100 créditos"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="@dimen/text_body"
+                            android:layout_marginBottom="@dimen/spacing_md" />
+
+                        <TextView style="@style/PlanFeature" android:text="✓ 100 edições profissionais" />
+                        <TextView style="@style/PlanFeature" android:text="✓ Downloads em 4K" />
+                        <TextView style="@style/PlanFeature" android:text="✓ Processamento prioritário" />
+                        <TextView style="@style/PlanFeature" android:text="✓ Presets personalizados" />
+                        <TextView style="@style/PlanFeature" android:text="✓ Suporte prioritário" />
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/RoundedButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Escolher Pro"
+                            android:layout_marginTop="@dimen/spacing_lg" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Unlimited Plan -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/corner_card"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/card_padding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="👑 Ilimitado"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="R$99,90"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/spacing_sm" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Créditos ilimitados"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="@dimen/text_body"
+                            android:layout_marginBottom="@dimen/spacing_md" />
+
+                        <TextView style="@style/PlanFeature" android:text="✓ Edições ilimitadas" />
+                        <TextView style="@style/PlanFeature" android:text="✓ Downloads em 4K" />
+                        <TextView style="@style/PlanFeature" android:text="✓ Processamento VIP" />
+                        <TextView style="@style/PlanFeature" android:text="✓ Presets personalizados" />
+                        <TextView style="@style/PlanFeature" android:text="✓ Suporte VIP dedicado" />
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/RoundedOutlineButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Escolher Ilimitado"
+                            android:layout_marginTop="@dimen/spacing_lg" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</ScrollView>

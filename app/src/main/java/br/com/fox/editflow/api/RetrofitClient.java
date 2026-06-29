@@ -10,6 +10,7 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class RetrofitClient {
     public static final String BASE_URL = "https://backend.fox.api.br/";
@@ -42,6 +43,9 @@ public class RetrofitClient {
             okHttpClient = new OkHttpClient.Builder()
                     .addInterceptor(logging)
                     .addInterceptor(authInterceptor)
+                    .connectTimeout(60, TimeUnit.SECONDS)
+                    .readTimeout(60, TimeUnit.SECONDS)
+                    .writeTimeout(60, TimeUnit.SECONDS)
                     .build();
         }
         return okHttpClient;

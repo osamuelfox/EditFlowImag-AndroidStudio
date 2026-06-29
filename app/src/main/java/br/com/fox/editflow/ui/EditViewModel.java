@@ -7,11 +7,6 @@ import android.os.Looper;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledFuture;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
-
 import br.com.fox.editflow.api.ApiService;
 import br.com.fox.editflow.api.RetrofitClient;
 import br.com.fox.editflow.models.GenerationRequest;
@@ -27,24 +22,30 @@ import retrofit2.Response;
  */
 public class EditViewModel extends ViewModel {
 
-    private static final long TIMEOUT_MS   = 30_000L;
     private static final int  POLL_DELAY_MS = 3_000;
 
     public final MutableLiveData<UiState> generationState = new MutableLiveData<>(new UiState.Idle());
+    public final MutableLiveData<UiState> creditState = new MutableLiveData<>(new UiState.Idle());
 
     private final Handler mainHandler = new Handler(Looper.getMainLooper());
-    private final ScheduledExecutorService scheduler = new ScheduledThreadPoolExecutor(1);
 
-    private ScheduledFuture<?> timeoutFuture;
     private Call<GenerationResponse> pendingCall;
     private boolean cancelled = false;
 
     // ── API ─────────────────────────────────────────────────────────────────
 
+    /**
+     * @deprecated O backend não gerencia créditos. Use TokenManager local.
+     */
+    @Deprecated
+    public void fetchCredits(Context context) {
+        // Mantido apenas para evitar erros de compilação em outros lugares se houver
+        creditState.setValue(new UiState.Idle());
+    }
+
     public void startGeneration(Context context, String imageId, String prompt, String loadingMsg) {
         cancelled = false;
         generationState.setValue(new UiState.Loading(loadingMsg));
-        scheduleTimeout(context);
 
         ApiService api = RetrofitClient.getClient(context).create(ApiService.class);
         GenerationRequest request = new GenerationRequest(imageId, "PROMPT", prompt);
@@ -57,7 +58,6 @@ public class EditViewModel extends ViewModel {
                     String genId = response.body().getId();
                     pollStatus(context, genId);
                 } else {
-                    cancelTimeout();
                     generationState.postValue(new UiState.Error(String.valueOf(response.code()), true));
                 }
             }
@@ -65,7 +65,6 @@ public class EditViewModel extends ViewModel {
             @Override
             public void onFailure(Call<GenerationResponse> call, Throwable t) {
                 if (cancelled) return;
-                cancelTimeout();
                 generationState.postValue(new UiState.Error("connection", true));
             }
         });
@@ -89,10 +88,8 @@ public class EditViewModel extends ViewModel {
 
                 GenerationResponse gen = response.body();
                 if (gen.isSucceeded() && gen.getResultImageId() != null) {
-                    cancelTimeout();
                     generationState.postValue(new UiState.Success<>(gen));
                 } else if (gen.isFailed()) {
-                    cancelTimeout();
                     String msg = gen.getErrorMessage() != null ? gen.getErrorMessage() : "server_error";
                     generationState.postValue(new UiState.Error(msg, true));
                 } else {
@@ -118,37 +115,14 @@ public class EditViewModel extends ViewModel {
 
     public void cancelGeneration() {
         cancelled = true;
-        cancelTimeout();
         mainHandler.removeCallbacksAndMessages(null);
         if (pendingCall != null) pendingCall.cancel();
         generationState.setValue(new UiState.Idle());
-    }
-
-    // ── Timeout ─────────────────────────────────────────────────────────────
-
-    private void scheduleTimeout(Context context) {
-        cancelTimeout();
-        timeoutFuture = scheduler.schedule(() ->
-                mainHandler.post(() -> {
-                    if (!cancelled) {
-                        if (pendingCall != null) pendingCall.cancel();
-                        mainHandler.removeCallbacksAndMessages(null);
-                        generationState.postValue(new UiState.Error("timeout", true));
-                    }
-                }), TIMEOUT_MS, TimeUnit.MILLISECONDS);
-    }
-
-    private void cancelTimeout() {
-        if (timeoutFuture != null) {
-            timeoutFuture.cancel(false);
-            timeoutFuture = null;
-        }
     }
 
     @Override
     protected void onCleared() {
         super.onCleared();
         cancelGeneration();
-        scheduler.shutdownNow();
     }
 }

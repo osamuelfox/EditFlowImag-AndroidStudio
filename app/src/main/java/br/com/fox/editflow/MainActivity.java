@@ -22,9 +22,11 @@ import com.google.android.material.snackbar.Snackbar;
 
 import br.com.fox.editflow.databinding.ActivityMainBinding;
 import br.com.fox.editflow.models.ImageResponse;
+import br.com.fox.editflow.models.UserProfile;
 import br.com.fox.editflow.ui.MainViewModel;
 import br.com.fox.editflow.ui.UiState;
 import br.com.fox.editflow.utils.LoadingOverlayHelper;
+import br.com.fox.editflow.utils.TokenManager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,13 +46,29 @@ public class MainActivity extends AppCompatActivity {
         viewModel = new ViewModelProvider(this).get(MainViewModel.class);
         setupBackPressHandler();
         setupClickListeners();
+
+        // Inicializa a UI com dados locais imediatamente
+        updateUI();
+
         observeViewModel();
+
+        viewModel.fetchUserProfile(this);
     }
 
     // ── Setup ────────────────────────────────────────────────────────────────
 
     private void setupClickListeners() {
         binding.cardUpload.setOnClickListener(v -> checkPermissionAndPickImage());
+        binding.btnUpgrade.setOnClickListener(v -> {
+            Intent intent = new Intent(this, PlansActivity.class);
+            startActivity(intent);
+        });
+        binding.btnLogout.setOnClickListener(v -> {
+            new TokenManager(this).clearSession();
+            Intent intent = new Intent(this, LoginActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        });
     }
 
     private void setupBackPressHandler() {
@@ -112,6 +130,23 @@ public class MainActivity extends AppCompatActivity {
     // ── Observação do ViewModel ──────────────────────────────────────────────
 
     private void observeViewModel() {
+        viewModel.profileState.observe(this, state -> {
+            if (state instanceof UiState.Loading) {
+                binding.pbCredits.setVisibility(android.view.View.VISIBLE);
+            } else if (state instanceof UiState.Success) {
+                UserProfile profile = ((UiState.Success<UserProfile>) state).data;
+                TokenManager tm = new TokenManager(this);
+                
+                // Sincroniza apenas o nome, o backend não gerencia créditos
+                tm.saveAuth(tm.getToken(), tm.getCurrentEmail(), profile.getName());
+                
+                updateUI();
+            } else if (state instanceof UiState.Error) {
+                // Em caso de erro, apenas garante que os créditos locais continuem aparecendo
+                updateUI();
+            }
+        });
+
         viewModel.uploadState.observe(this, state -> {
             if (state instanceof UiState.Loading) {
                 isLoading = true;
@@ -181,6 +216,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // ── Helpers ──────────────────────────────────────────────────────────────
+
+    private void updateUI() {
+        TokenManager tm = new TokenManager(this);
+        int displayCredits = tm.getAvailableCredits();
+        binding.tvCredits.setText(getString(R.string.credits_label, displayCredits));
+        binding.tvUserName.setText(tm.getUserName().toLowerCase());
+        
+        binding.pbCredits.setVisibility(android.view.View.GONE);
+        binding.tvCredits.setVisibility(android.view.View.VISIBLE);
+    }
 
     private int safeInt(String s) {
         try { return Integer.parseInt(s); } catch (Exception e) { return 0; }

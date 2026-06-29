@@ -1,66 +1,118 @@
 [
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/anim_slide_in_right.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/anim/slide_in_right.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/anim_slide_in_left.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/anim/slide_in_left.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/anim_fade_out.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/anim/fade_out.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/anim_fade_in.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/anim/fade_in.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_activity_edit.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/layout/activity_edit.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/anim_slide_in_right.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/anim/slide_in_right.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/anim_fade_in.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/anim/fade_in.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/layout_activity_edit.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/activity_edit.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/anim_slide_out_right.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/anim/slide_out_right.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/drawable_bg_credits_badge.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/drawable/bg_credits_badge.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/anim_slide_in_left.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/anim/slide_in_left.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/layout_fragment_guided_prompt.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/fragment_guided_prompt.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/color_text_input_hint_color.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/color/text_input_hint_color.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/layout_activity_register.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/activity_register.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_activity_register.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/layout/activity_register.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/color_text_input_hint_color.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/color/text_input_hint_color.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/anim_slide_out_left.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/anim/slide_out_left.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/drawable_bg_overlay_card.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/drawable/bg_overlay_card.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_activity_login.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/layout/activity_login.xml"
+        "merged": "br.com.fox.editflow.app-merged_res-33:/drawable_ic_user.xml.flat",
+        "source": "br.com.fox.editflow.app-main-35:/drawable/ic_user.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/drawable_bg_overlay_card.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/drawable/bg_overlay_card.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/layout_fragment_free_prompt.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/fragment_free_prompt.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/color_input_stroke_color.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/color/input_stroke_color.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/layout_view_empty_state.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/view_empty_state.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_view_loading_overlay.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/layout/view_loading_overlay.xml"
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/color_input_stroke_color.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/color/input_stroke_color.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_view_empty_state.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/layout/view_empty_state.xml"
+        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_activity_plans.xml.flat",
+        "source": "br.com.fox.editflow.app-main-35:/layout/activity_plans.xml"
     },
     {
-        "merged": "br.com.fox.editflow.app-merged_res-33:/layout_activity_result.xml.flat",
-        "source": "br.com.fox.editflow.app-main-35:/layout/activity_result.xml"
+        "merged": "br.com.fox.editflow.app-merged_res-33:/drawable_ic_logout.xml.flat",
+        "source": "br.com.fox.editflow.app-main-35:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/drawable_bg_upgrade_btn.xml.flat",
+        "source": "br.com.fox.editflow.app-main-35:/drawable/bg_upgrade_btn.xml"
     },
     {
         "merged": "br.com.fox.editflow.app-merged_res-33:/layout_activity_main.xml.flat",
         "source": "br.com.fox.editflow.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/layout_activity_result.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/activity_result.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/drawable_bg_popular_badge.xml.flat",
+        "source": "br.com.fox.editflow.app-main-35:/drawable/bg_popular_badge.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/drawable_ic_crown.xml.flat",
+        "source": "br.com.fox.editflow.app-main-35:/drawable/ic_crown.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/anim_slide_out_right.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/drawable_bg_user_badge.xml.flat",
+        "source": "br.com.fox.editflow.app-main-35:/drawable/bg_user_badge.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/anim_slide_out_left.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/anim/slide_out_left.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/anim_fade_out.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/anim/fade_out.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/layout_layout_guided_chip.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/layout_guided_chip.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/layout_view_loading_overlay.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/view_loading_overlay.xml"
+    },
+    {
+        "merged": "br.com.fox.editflow.app-merged_res-33:/drawable_ic_lightning.xml.flat",
+        "source": "br.com.fox.editflow.app-main-35:/drawable/ic_lightning.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/layout_activity_login.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "/home/fox/.gradle/daemon/8.5/br.com.fox.editflow.app-main-35:/layout/activity_main.xml"
     }
 ]
