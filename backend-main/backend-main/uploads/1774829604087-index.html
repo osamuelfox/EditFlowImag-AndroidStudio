@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feira de Eletrônicos - Uniube</title>
+    <script defer src="./scripts/script.js"></script>
+</head>
+<body>
+
+    <h1>Feira de Eletrônicos - UNIUBE</h1>
+    <fieldset>
+                <br>
+        <legend>Cadastro de Produto no Estoque</legend>
+        <label for="name">Nome:</label>
+        <input type="text" name="" id="nome">
+        <br><br>
+        <label for="name">Marca:</label>
+        <input type="text" name="" id="marca">
+        <br><br>
+        <label for="name">Valor:</label>
+        <input type="text" name="" id="valor">
+        <br><br>
+        <label for="name">Quantidade:</label>
+        <input type="text" name="" id="quant">
+        <br><br>
+        <button id="insertButton" onclick="insertProduct()">Inserir produto no Estoque</button>
+   
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Produtos em Estoque: </legend>
+
+         <div id="container">
+
+        </div>
+    </fieldset>
+
+</body>
+</html>
